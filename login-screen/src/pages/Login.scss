@@ -1,0 +1,156 @@
+@import '../variables';
+
+.login {
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  color: $black;
+
+  &__sidebar {
+    align-items: center;
+    background-image: url(../assets/sidebar-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 30vw;
+    z-index: 2;
+
+    &.signIn {
+      transform: translateX(70vw);
+      transition: all 1s;
+    }
+
+    &.signUp {
+      transition: all 1s;
+    }
+
+    &__logo {
+      height: 4.5em;
+      left: 2em;
+      position: absolute;
+      top: 1em;
+      width: 12.5em;
+      z-index: 3;
+      -webkit-mask: url(../assets/logo.svg) no-repeat center;
+      mask: url(../assets/logo.svg) no-repeat center;
+      mask-size: contain;
+
+      &.signUp {
+        background-color: $white;
+        transition: all 2.5s;
+      }
+
+      &.signIn {
+        background-color: $black;
+        transition: all 2.5s;
+      }
+    }
+
+    &__title {
+      font-size: 3.5em;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      width: 50%;
+    }
+  }
+
+  &__form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    &.signIn {
+      transform: translateX(-30vw);
+      transition: all 1s;
+    }
+
+    &.signUp {
+      transition: all 1s;
+    }
+
+    &__social-medias {
+      display: flex;
+      margin: 2em;
+    }
+
+    &__social-media__icon {
+      align-items: center;
+      border: 1px solid $light-grey;
+      border-radius: 100%;
+      cursor: pointer;
+      display: flex;
+      height: 3em;
+      justify-content: center;
+      margin-right: 1em;
+      width: 3em;
+
+      &:hover {
+        color: white;
+      }
+
+      &.facebookF {
+        &:hover {
+          background-color: $facebookF-color;
+        }
+      }
+
+      &.googlePlusG {
+        &:hover {
+          background-color: $googlePlusG-color;
+        }
+      }
+
+      &.linkedinIn {
+        &:hover {
+          background-color: $linkedinIn-color;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 3.5em;
+      font-weight: 500;
+    }
+
+    &__input-group {
+      position: relative;
+
+      &__icon {
+        color: $dark-grey;
+        left: 1.4em;
+        position: absolute;
+        top: 26px;
+      }
+
+      &__forgot-password {
+        cursor: pointer;
+        border-bottom: 2px solid $light-grey;
+        padding-bottom: 1px;
+      }
+
+      input[type="text"] {
+        background-color: $light-grey;
+        border: 0;
+        margin-bottom: 1em;
+        padding: 2em 3.8em;
+        width: 40em;
+
+        &::placeholder {
+          color: $dark-grey;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

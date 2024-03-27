@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.primary-button {
+  all: unset;
+  background-color: $black;
+  border-radius: 2em;
+  color: $white;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 1em;
+  text-align: center;
+  width: 12em;
+  
+  &:hover {
+    background-color: $black;
+  }
+}
