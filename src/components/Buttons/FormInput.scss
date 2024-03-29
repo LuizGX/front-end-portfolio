@@ -1,0 +1,14 @@
+@import "../../variables";
+
+.form-input {
+  background-color: $light-grey;
+  border: 0;
+  margin-bottom: 1em;
+  padding: 2em 3.8em;
+  width: 40em;
+
+  &::placeholder {
+    color: $dark-grey;
+    font-size: 1.2em;
+  }
+}

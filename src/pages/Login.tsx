@@ -9,6 +9,7 @@ import {
 import { faEnvelope, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import SecondaryButton from "../components/Buttons/SecondaryButton";
+import FormInput from "../components/Buttons/FormInput";
 
 function Login() {
   const [mouseOverSocialMedia, setMouseOverSocialMedia] = useState("");
@@ -73,14 +74,14 @@ function Login() {
               icon={faEnvelope}
               className="login__form__input-group__icon"
             />
-            <input type="text" name="email" placeholder="Email" />
+            <FormInput fieldName="email" placeholder="Email" />
           </div>
           <div className="login__form__input-group">
             <FontAwesomeIcon
               icon={faLock}
               className="login__form__input-group__icon"
             />
-            <input type="text" name="password" placeholder="Password" />
+            <FormInput fieldName="password" placeholder="Password" />
           </div>
           <p className="login__form__input-group__forgot-password">
             Forgot your password?
@@ -129,21 +130,21 @@ function Login() {
               icon={faUser}
               className="login__form__input-group__icon"
             />
-            <input type="text" name="name" placeholder="Name"></input>
+            <FormInput fieldName="name" placeholder="Name" />
           </div>
           <div className="login__form__input-group">
             <FontAwesomeIcon
               icon={faEnvelope}
               className="login__form__input-group__icon"
             />
-            <input type="text" name="email" placeholder="Email" />
+            <FormInput fieldName="email" placeholder="Email" />
           </div>
           <div className="login__form__input-group">
             <FontAwesomeIcon
               icon={faLock}
               className="login__form__input-group__icon"
             />
-            <input type="text" name="password" placeholder="Password" />
+            <FormInput fieldName="password" placeholder="Password" />
           </div>
           <PrimaryButton
             onClick={() => {}}
