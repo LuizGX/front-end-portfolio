@@ -9,7 +9,7 @@ import {
 import { faEnvelope, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import SecondaryButton from "../components/Buttons/SecondaryButton";
-import FormInput from "../components/Buttons/FormInput";
+import FormInput from "../components/Inputs/FormInput";
 
 function Login() {
   const [mouseOverSocialMedia, setMouseOverSocialMedia] = useState("");
